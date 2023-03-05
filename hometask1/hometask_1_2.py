@@ -4,7 +4,7 @@ for i in range(n):
     a = int(input('Введите число: '))
     s.append(a)
 for i in s:
-    count = 0
+    count = 0 # счетчик повторений
     for j in s:
         if i == j:
             count += 1
