@@ -1,5 +1,5 @@
 a = True
-while a == True:
+while True:
     numbers = input('Введите числа через пробел: ')
     list_of_numbers = numbers.split(' ')
     space = list_of_numbers.count('')  # счетчик ненужных пробелов
