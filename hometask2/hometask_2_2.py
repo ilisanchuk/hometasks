@@ -1,4 +1,3 @@
-a = True
 while True:
     numbers = input('Введите числа через пробел: ')
     list_of_numbers = numbers.split(' ')
