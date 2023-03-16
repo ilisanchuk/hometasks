@@ -1,12 +1,12 @@
-def choice():
-    y = input('Попробовать ещё раз? (y/n): ')
-    if y == 'y':
-        return bigger_than_neighbours()
-    elif y == 'n':
-        raise SystemExit
-    else:
-        return choice()
 def bigger_than_neighbours():
+    def choice():
+        y = input('Попробовать ещё раз? (y/n): ')
+        if y == 'y':
+            return bigger_than_neighbours()
+        elif y == 'n':
+            raise SystemExit
+        else:
+            return choice()
     numbers = input('Введите числа через пробел: ')
     lst = numbers.split(' ')
     space = lst.count('')
