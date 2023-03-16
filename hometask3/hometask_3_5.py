@@ -7,6 +7,7 @@ def unique():
             raise SystemExit
         else:
             return choice()
+
     numbers = input('\t Введите числа через пробел по неубыванию: ')
     lst = numbers.split(' ')
     space = lst.count('')

@@ -6,9 +6,11 @@ def calc():
             return calc()
         elif y != 'n':
             return choice()
+
     a = input('Введите первое число: ')
     b = input('Введите второе число: ')
     symbol = input('Введите знак + , - , * или /: ')
+    a, b, symbol = a.strip(), b.strip(), symbol.strip()
     if not a.isdigit() or not b.isdigit():
         print('\t Неверный формат данных!')
         choice()
@@ -37,4 +39,5 @@ def calc():
         else:
             print('\t Неправильный формат знака.')
             choice()
+
 calc()
